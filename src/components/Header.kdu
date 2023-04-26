@@ -32,7 +32,6 @@ export default {
   z-index: 1000;
   transition: 0.5s;
 }
-
 .header.sticky {
   background-color: #fff;
   box-shadow: 0 0 5px #777;
@@ -40,7 +39,23 @@ export default {
 
 .header p {
   position: relative;
+  display: inline-block;
   color: #2c3e50;
   transition: 0.5s;
+}
+.header.sticky p {
+  left: 50%;
+  transform: translateX(-50%);
+  animation: centerAnim 0.5s both ease-in-out;
+}
+@keyframes centerAnim {
+  0% {
+    left: 0%;
+    transform: translateX(0%);
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 </style>
