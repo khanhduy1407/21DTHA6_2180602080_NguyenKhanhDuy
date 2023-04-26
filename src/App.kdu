@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <Header logoName="21DTHA6_2180602080_Nguyễn Khánh Duy" />
+
+    <Banner title="Nguyễn Khánh Duy" />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.kdu';
+import Banner from './components/Banner.kdu';
 
 export default {
   name: 'App',
   components: {
     Header,
-  }
+    Banner
+}
 }
 </script>
 
@@ -23,6 +27,6 @@ export default {
   box-sizing: border-box;
 }
 #app {
-  color: #2c3e50;
+  min-height: 1000px;
 }
 </style>

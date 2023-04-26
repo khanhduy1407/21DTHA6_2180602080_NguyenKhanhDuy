@@ -9,17 +9,38 @@ export default {
   name: 'Header',
   props: {
     logoName: String
-  }
+  },
+  created () {
+    window.addEventListener('scroll', function() {
+      var header = this.document.querySelector('.header')
+      header.classList.toggle('sticky', this.window.scrollY > 0)
+    })
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
 }
 </script>
 
 <style scoped>
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #000;
   padding: 20px;
+  z-index: 1000;
+  transition: 0.5s;
 }
-p {
-  color: #fff;
+
+.header.sticky {
+  background-color: #fff;
+  box-shadow: 0 0 5px #777777;
+}
+
+.header p {
+  position: relative;
+  color: #2c3e50;
+  transition: 0.5s;
 }
 </style>

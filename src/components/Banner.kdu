@@ -3,3 +3,25 @@
     <h1>{{ title }}</h1>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Header',
+  props: {
+    title: String
+  }
+}
+</script>
+
+<style scoped>
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 55vh;
+  background: url(../assets/bg-banner.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
