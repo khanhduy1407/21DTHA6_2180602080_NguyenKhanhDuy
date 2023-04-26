@@ -5,6 +5,8 @@
     <Banner title="Nguyễn Khánh Duy" />
 
     <AboutMe />
+
+    <WrittingSection />
   </div>
 </template>
 
@@ -12,13 +14,15 @@
 import Header from './components/Header.kdu';
 import Banner from './components/Banner.kdu';
 import AboutMe from './components/AboutMe.kdu';
+import WrittingSection from './components/WrittingSection.kdu';
 
 export default {
   name: 'App',
   components: {
     Header,
     Banner,
-    AboutMe
+    AboutMe,
+    WrittingSection
   }
 }
 </script>

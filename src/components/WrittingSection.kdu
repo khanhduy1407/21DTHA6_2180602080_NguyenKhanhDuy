@@ -1,0 +1,95 @@
+<template>
+  <section class="writtingSection">
+    <h2>WRITTING</h2>
+    <div class="box">
+      <div class="item" k-for="topic in topics" k-bind:key="topic.id">
+        <h3>Writting {{ topic.id }}</h3>
+        <p><b>Topic:</b> {{ topic.title }}</p>
+        <a :href="getLink(topic.linkId)" target="_blank">
+          Go to document →
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "WrittingSection",
+  data: function() {
+    return {
+      topics: [
+        { id: 1, title: 'Comming soon!', linkId: '' }, // 1hNG_BsfNrltxUjw3w0Qu5-Q59pBlGOJ8ZD_Ct1yhNJU
+        { id: 2, title: 'Comming soon!', linkId: '' },
+        { id: 3, title: 'Comming soon!', linkId: '' }
+      ]
+    }
+  },
+  methods: {
+    getLink: function(linkId) {
+      return linkId == '' ? '#' : 'https://docs.google.com/document/d/' + linkId + '/edit?usp=sharing'
+    }
+  }
+}
+</script>
+
+<style scoped>
+.writtingSection {
+  position: relative;
+  margin: 0 10px 40px;
+}
+
+.writtingSection h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  margin: 20px 50px;
+}
+
+.box .item {
+  position: relative;
+  margin: 40px 0;
+}
+
+.box .item h3 {
+  text-decoration: underline;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+.box .item p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+.box .item a {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #0087ca;
+}
+.box .item a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.box .item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 754px) {
+  .box {
+    margin: 10px;
+  }
+}
+</style>

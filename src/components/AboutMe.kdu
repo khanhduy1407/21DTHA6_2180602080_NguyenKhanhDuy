@@ -1,13 +1,15 @@
 <template>
   <div class="aboutMe">
-    <Grid>
+    <Grid class="card">
       <div class="itemLeft">
         <img src="../assets/avatar.jpg" class="avatar" />
       </div>
       <div class="itemRight">
         <div class="center">
           <h2>About me</h2>
-          <p>Nguyễn Khánh Duy - 21DTHA6</p>
+          <p><b>Lớp:</b> 21DTHA6</p>
+          <p><b>MSSV:</b> 2180602080</p>
+          <p><b>Họ tên:</b> Nguyễn Khánh Duy</p>
         </div>
       </div>
     </Grid>
@@ -26,13 +28,25 @@ export default {
 <style scoped>
 .aboutMe {
   position: relative;
-  width: 100%;
+  margin: 0 50px;
 }
 
+.card {
+  padding: 20px 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px #777;
+}
+
+.itemLeft {
+  position: relative;
+  width: 100%;
+}
 .itemLeft .avatar {
   position: relative;
   display: block;
   max-width: 300px;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
@@ -46,5 +60,22 @@ export default {
 }
 .itemRight p {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 754px) {
+  .aboutMe {
+    margin: 0;
+  }
+
+  .itemLeft .avatar {
+    max-width: 200px;
+  }
+
+  .itemRight {
+    justify-content: center;
+  }
+  .itemRight h2 {
+    text-align: center;
+  }
 }
 </style>
