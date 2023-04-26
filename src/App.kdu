@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Kdu logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Kdu.js App"/>
+    <Header logoName="21DTHA6_2180602080_Nguyễn Khánh Duy" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.kdu'
+import Header from './components/Header.kdu';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

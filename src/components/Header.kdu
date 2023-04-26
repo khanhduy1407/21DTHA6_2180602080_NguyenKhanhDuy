@@ -1,0 +1,25 @@
+<template>
+  <div class="header">
+    <p>{{ logoName }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Header',
+  props: {
+    logoName: String
+  }
+}
+</script>
+
+<style scoped>
+.header {
+  width: 100%;
+  background: #000;
+  padding: 20px;
+}
+p {
+  color: #fff;
+}
+</style>
