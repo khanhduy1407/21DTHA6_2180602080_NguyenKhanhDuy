@@ -1,0 +1,50 @@
+<template>
+  <div class="aboutMe">
+    <Grid>
+      <div class="itemLeft">
+        <img src="../assets/avatar.jpg" class="avatar" />
+      </div>
+      <div class="itemRight">
+        <div class="center">
+          <h2>About me</h2>
+          <p>Nguyễn Khánh Duy - 21DTHA6</p>
+        </div>
+      </div>
+    </Grid>
+  </div>
+</template>
+
+<script>
+import Grid from './Grid.kdu';
+
+export default {
+    name: "AboutMe",
+    components: { Grid }
+}
+</script>
+
+<style scoped>
+.aboutMe {
+  position: relative;
+  width: 100%;
+}
+
+.itemLeft .avatar {
+  position: relative;
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  box-shadow: 0 3px 5px #777;
+}
+
+.itemRight {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.itemRight p {
+  margin-top: 20px;
+}
+</style>

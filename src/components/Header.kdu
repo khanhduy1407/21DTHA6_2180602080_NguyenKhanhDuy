@@ -35,7 +35,7 @@ export default {
 
 .header.sticky {
   background-color: #fff;
-  box-shadow: 0 0 5px #777777;
+  box-shadow: 0 0 5px #777;
 }
 
 .header p {
