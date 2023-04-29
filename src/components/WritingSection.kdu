@@ -28,7 +28,7 @@ export default {
                 '<li>What do you like about this person?</li>' +
                 '<li>What are his/her achievements?</li></ul>',
           warning: 'Your writing has to be in full sentences and in the letter form. Tenses, vocabularies and conjunctions are used appropriately.',
-          linkId: '' // 1hNG_BsfNrltxUjw3w0Qu5-Q59pBlGOJ8ZD_Ct1yhNJU
+          linkId: '1hNG_BsfNrltxUjw3w0Qu5-Q59pBlGOJ8ZD_Ct1yhNJU'
         },
         { id: 2,
           title: 'A green product',
@@ -38,7 +38,7 @@ export default {
                 '<ul><li>material/design/function/price</li></ul>' +
                 '<li>How does it help the local environment?</li></ul>',
           warning: 'Your writing has to be in full sentences and in the letter form. Tenses, vocabularies and conjunctions are used appropriately.',
-          linkId: '' // 1hNG_BsfNrltxUjw3w0Qu5-Q59pBlGOJ8ZD_Ct1yhNJU
+          linkId: ''
         },
         { id: 3, desc: 'Coming soon!', linkId: '' }
       ]
