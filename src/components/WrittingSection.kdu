@@ -40,7 +40,7 @@ export default {
           warning: 'Your writing has to be in full sentences and in the letter form. Tenses, vocabularies and conjunctions are used appropriately.',
           linkId: '' // 1hNG_BsfNrltxUjw3w0Qu5-Q59pBlGOJ8ZD_Ct1yhNJU
         },
-        { id: 3, desc: 'Comming soon!', linkId: '' }
+        { id: 3, desc: 'Coming soon!', linkId: '' }
       ]
     }
   },
