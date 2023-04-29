@@ -6,7 +6,7 @@
 
     <AboutMe />
 
-    <WrittingSection />
+    <WritingSection />
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 import Header from './components/Header.kdu';
 import Banner from './components/Banner.kdu';
 import AboutMe from './components/AboutMe.kdu';
-import WrittingSection from './components/WrittingSection.kdu';
+import WritingSection from './components/WritingSection.kdu';
 
 export default {
   name: 'App',
@@ -22,7 +22,7 @@ export default {
     Header,
     Banner,
     AboutMe,
-    WrittingSection
+    WritingSection
   }
 }
 </script>
