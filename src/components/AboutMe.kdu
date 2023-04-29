@@ -62,6 +62,29 @@ export default {
 .itemRight p {
   margin-top: 20px;
 }
+.itemRight p a {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #0087ca;
+}
+.itemRight p a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.itemRight p a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 @media screen and (max-width: 754px) {
   .aboutMe {
