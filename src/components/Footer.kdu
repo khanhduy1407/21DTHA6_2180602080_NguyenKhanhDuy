@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <p>Copyright (c) 2023-present NKDuy.</p>
+    <p>Copyright (c) 2023-present NKDuy</p>
   </div>
 </template>
 
