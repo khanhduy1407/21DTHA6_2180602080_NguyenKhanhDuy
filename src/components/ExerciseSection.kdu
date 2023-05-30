@@ -58,6 +58,10 @@ export default {
           desc: 'Make one speculation about each person (P.142-143)',
           linkId: '1Zq_px9iuc51T7WkGTMLGtdUu3FSw1ubbg-JnZatSwa0'
         },
+        { id: 2,
+          desc: 'Part A (P.144)',
+          linkId: '1w0mTZ-QN7xTuRqK8cuWP7QAx8vrA7i-9zTJmIIlsSHc'
+        },
       ],
     }
   },
